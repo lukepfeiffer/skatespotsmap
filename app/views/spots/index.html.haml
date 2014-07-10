@@ -1,0 +1,11 @@
+- if @spots.present?
+  - @spots.each do |spot|
+    %div
+      %ul
+        %li
+          = spot.city
+          ,
+          = spot.state
+          = spot.zip_code
+        %li= spot.description
+        %li= spot.additional_info
