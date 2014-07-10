@@ -1,13 +1,107 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+#main{
+  background-color: #ccc;
+  font-family: arial;
+  margin: 5px 3px;
+}
+
+p{
+  margin: 0;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+input{
+  width: 240px;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 2px 4px;
+}
+
+label{
+  text-decoration: underline;
+}
+
+textarea{
+  width: 240px;
+  height: 112px;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin: 2px 4px;
+}
+
+ul{
+  padding: 0;
+  margin: 5px 10px;
+}
+
+li{
+  list-style-type: none;
+}
+
+.field_holder{
+  width: 50%;
+}
+
+.submit{
+  width: 80px;
+  border: 1px solid #000;
+}
+
+.username{
+  color: #1404c9;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.username:hover{
+  color: #0a72fa;
+}
+
+.create_link{
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color:  #0a26c7;
+}
+
+.create_link:hover{
+  background-color: #1a6cc9;
+}
+
+.sign_in{
+  color: #fff;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #0a26c7;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+#sign_out{
+  color: #fff;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #c70a23;
+}
+
+#create_spot{
+  width: 115px;
+}
+
+#create_spot_form{
+  width: 550px;
+}

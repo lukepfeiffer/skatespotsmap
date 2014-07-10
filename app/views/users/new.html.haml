@@ -1,0 +1,37 @@
+%div.field_holder
+  %div.sign_up_form
+    %p Sign Up
+    %ul
+      = form_for(@user) do |f|
+        %li
+          = f.label :username
+        %li
+          = f.text_field :username
+        %li
+          = f.label :email
+        %li
+          = f.text_field :email
+        %li
+          = f.label :password
+        %li
+          = f.password_field :password
+        %li 
+          = f.label :password_confirmation
+        %li
+          = f.password_field :password_confirmation
+        %li
+          = f.submit 'Sign Up', class: 'submit'
+  %div.sign_in_form
+    %p Sign In
+    %ul
+      = form_tag(sessions_path) do
+        %li
+          = label_tag :email
+        %li
+          = text_field_tag :email, nil
+        %li
+          = label_tag :password
+        %li
+          = password_field_tag :password, nil
+        %li
+          = submit_tag 'Sign In', class: 'submit'

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'faraday'
 gem 'authem'
 gem 'haml-rails'
 gem 'rails', '4.0.0'

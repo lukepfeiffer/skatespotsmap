@@ -1,0 +1,40 @@
+%div#create_spot_form
+  = form_for(@spot) do |f|
+    %ul.left
+      %li
+        = f.label :city
+      %li
+        = f.text_field :city
+
+      %li
+        = f.label :state
+      %li
+        = f.text_field :state
+
+      %li
+        = f.label :street
+      %li
+        = f.text_field :street
+
+      %li
+        = f.label :zip_code
+      %li
+        = f.text_field :zip_code
+
+      %li
+        = f.label :building_number
+      %li
+        = f.text_field :building_number
+
+      %li
+        = f.submit 'Create Spot', class: 'submit', id: 'create_spot'
+    %ul.right
+      %li
+        = f.label :description
+      %li
+        = f.text_area :description, placeholder: 'A little bit of information on what the spot is.'
+
+      %li
+        = f.label :additional_info, id: 'additional info'
+      %li
+        = f.text_area :additional_info, placeholder: 'Although not necessary, this can be information to help out someone(i.e. good times to skate)'
