@@ -1,0 +1,17 @@
+- if @spots.present?
+  - @spots.each do |spot|
+    %div.spot
+      %ul
+        %li
+          = spot.city
+          ,
+          = spot.state
+          = spot.zip_code
+        %li
+          = spot.building_number
+          = spot.street
+        %li= spot.description
+        %li= spot.additional_info
+        - if current_user.admin?
+          = link_to 'Delete Spot', spot_path(spot), method: :delete, class: 'delete'
+

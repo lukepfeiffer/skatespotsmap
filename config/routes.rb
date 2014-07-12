@@ -2,7 +2,10 @@ Skatespotsmap::Application.routes.draw do
   resources :users
   resources :spots
 
-  root 'spots#index'
+  root 'pages#home'
+
+  get '/city', to: 'pages#city'
+  get '/about', to: 'pages#about'
 
   post 'sessions', to: 'sessions#create'
 

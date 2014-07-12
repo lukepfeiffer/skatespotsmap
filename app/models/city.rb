@@ -15,6 +15,8 @@ class City
   end
 
   def name
-    @city_hash['results'].first['formatted_address']
+    if @city.present?
+      @city_hash['results'].first['formatted_address']
+    end
   end
 end

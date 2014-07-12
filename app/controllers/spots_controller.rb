@@ -1,6 +1,5 @@
 class SpotsController < ApplicationController
   def index
-    @spots = Spot.all
   end
 
   def new
@@ -14,6 +13,11 @@ class SpotsController < ApplicationController
     else
       redirect_to new_spot_path
     end
+  end
+
+  def destroy
+    Spot.find(params[:id]).destroy
+    redirect_to root_path
   end
 
   def spot_params

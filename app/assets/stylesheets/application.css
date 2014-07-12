@@ -1,5 +1,6 @@
 #main{
-  background-color: #ccc;
+  background: url('/assets/Blank_US_Map.svg') no-repeat;
+  background-size: 100% 90%;
   font-family: arial;
   margin: 5px 3px;
 }
@@ -46,6 +47,7 @@ li{
 
 .submit{
   width: 80px;
+  cursor: pointer;
   border: 1px solid #000;
 }
 
@@ -56,20 +58,36 @@ li{
 }
 
 .username:hover{
-  color: #0a72fa;
+  color: #2a59f5;
 }
 
-.create_link{
-  color: #fff;
-  font-weight: bold;
-  padding: 4px 10px;
-  border-radius: 6px;
+.spot{
+  float: left;
+}
+
+.delete{
+  color: #c70a23;
+  font-size: 14px;
   text-decoration: none;
-  background-color:  #0a26c7;
 }
 
-.create_link:hover{
-  background-color: #1a6cc9;
+.delete:hover{
+  font-weight: bold;
+}
+
+.layout_link{
+  margin: 0 5px;
+  color: #0498c4;
+  text-decoration: none;
+}
+
+.layout_link:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.links{
+  margin: 10px 0;
 }
 
 .sign_in{
@@ -90,12 +108,7 @@ li{
 }
 
 #sign_out{
-  color: #fff;
-  float: right;
-  padding: 5px 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  background-color: #c70a23;
+  color: #c70a23;
 }
 
 #create_spot{
@@ -104,4 +117,27 @@ li{
 
 #create_spot_form{
   width: 550px;
+}
+
+#logged_in_message{
+  font-size: 14px;
+}
+
+#about_text{
+  font-size: 16px;
+  margin: 3px 10px;
+  width: 400px;
+}
+
+#about_ul{
+  width: 500px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#about_li{
+  margin: 3px 18px;
+  font-size: 17px;
+  font-weight: normal;
+  list-style-type: disc;
 }

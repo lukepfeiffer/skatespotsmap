@@ -1,15 +1,21 @@
 %head
   %title Skatespotsmap
   = stylesheet_link_tag    "application", media: "all"
-  = javascript_include_tag "application"
+  = javascript_include_tag "jquery", "application"
   = csrf_meta_tags
 
 %body#main
+  %div.links
+    %h1
+      Skate Spots Map
+    = link_to 'About Site', about_path, class: 'layout_link'
+    = link_to 'Find Your Area', city_path, class: 'layout_link'
+    - if signed_in?
+      = link_to 'Create Spot', new_spot_path, class: 'layout_link'
+    - else
+      = link_to 'Create Spot', new_user_path, class: 'layout_link'
   - if signed_in?
     %div
-      = link_to current_user.username, spots_path, class: 'username'
-      = link_to 'Create Spot', new_spot_path, class: 'create_link'
-      = link_to 'Sign Out', sign_out_path, method: :delete, id: 'sign_out'
-  - else
-    = link_to 'Sign In', new_user_path, class: 'sign_in'
+      = link_to current_user.username, root_path, class: 'username'
+      = link_to 'Sign Out', sign_out_path, method: :delete, class: 'layout_link', id: 'sign_out'
   = yield
