@@ -24,9 +24,9 @@ class SpotsController < ApplicationController
     params.require(:spot).permit(
       :city,
       :state,
-      :street,
       :zip_code,
-      :building_number,
+      :address_1,
+      :address_2,
       :description,
       :additional_info
     )

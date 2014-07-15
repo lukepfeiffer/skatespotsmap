@@ -7,7 +7,7 @@
 %body#main
   %div.links
     %h1
-      Skate Spots Map
+      = link_to 'Skate Spots Map', root_path, id: 'header_link'
     = link_to 'About Site', about_path, class: 'layout_link'
     = link_to 'Find Your Area', city_path, class: 'layout_link'
     - if signed_in?
@@ -15,7 +15,8 @@
     - else
       = link_to 'Create Spot', new_user_path, class: 'layout_link'
   - if signed_in?
-    %div
-      = link_to current_user.username, root_path, class: 'username'
+    %div.username_div
+      %span.username
+        = current_user.username
       = link_to 'Sign Out', sign_out_path, method: :delete, class: 'layout_link', id: 'sign_out'
   = yield

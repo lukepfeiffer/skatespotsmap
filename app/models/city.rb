@@ -1,13 +1,10 @@
 class City
-
   def self.find(zip)
-    city = Faraday.get('http://maps.googleapis.com/maps/api/geocode/json') do |request|
-      request.params = {
-        'address' => zip
-      }
-    end.body
+    response = Faraday.get('http://maps.googleapis.com/maps/api/geocode/json') do |request|
+      request.params['address'] = zip
+    end
 
-    new(JSON.parse(city))
+    new(JSON.parse(response.body))
   end
 
   def initialize(city_hash)
@@ -15,8 +12,6 @@ class City
   end
 
   def name
-    if @city.present?
-      @city_hash['results'].first['formatted_address']
-    end
+    @city_hash['results'].first['formatted_address']
   end
 end

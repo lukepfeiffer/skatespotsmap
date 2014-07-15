@@ -1,3 +1,4 @@
 class Spot < ActiveRecord::Base
-  validates_presence_of :city, :state, :street, :zip_code, :building_number, :building_number, :description
+  belongs_to :city
+  validates_presence_of :city, :state, :address_1, :zip_code, :description
 end

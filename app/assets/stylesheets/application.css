@@ -57,12 +57,14 @@ li{
   font-weight: bold;
 }
 
-.username:hover{
-  color: #2a59f5;
+.username_div{
+  margin: 0 6px;
 }
 
 .spot{
   float: left;
+  width: 250px;
+  margin: 15px;
 }
 
 .delete{
@@ -107,6 +109,16 @@ li{
   float: left;
 }
 
+#header_link{
+  color: #000;
+  text-decoration: none;
+}
+
+#header_link:hover{
+  text-decoration: underline;
+  font-size: 33px;
+}
+
 #sign_out{
   color: #c70a23;
 }
@@ -140,4 +152,9 @@ li{
   font-size: 17px;
   font-weight: normal;
   list-style-type: disc;
+}
+
+#spot_li{
+  list-style-type: disc;
+  margin: 3px 18px;
 }

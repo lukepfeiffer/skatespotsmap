@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def home
-    @spots = Spot.find(:all, order: :id, limit: '4', order: 'created_at DESC').reverse
+    @spots = Spot.find(:all, order: :id, limit: '8', order: 'created_at DESC').reverse
   end
 
   def about
