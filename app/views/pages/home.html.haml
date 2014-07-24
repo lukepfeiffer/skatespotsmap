@@ -1,3 +1,6 @@
+= form_tag(root_path, method: :get) do
+  = text_field_tag :search
+  = submit_tag 'Search', class: 'search'
 - if @spots.present?
   - @spots.each do |spot|
     %div.spot
@@ -7,6 +10,7 @@
           = spot.address_2
         %li
           = spot.city
+          ,
           = spot.state
           = spot.zip_code
         %li.spot_li= spot.description
