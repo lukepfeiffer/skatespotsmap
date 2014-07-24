@@ -1,0 +1,9 @@
+%h1 Cities
+%h2
+  - if @city.present?
+    = @city.name
+
+%div.city_spot
+  %ul
+    - @cities.each do |city|
+      %li= link_to city, city_path(address: city.parameterize)

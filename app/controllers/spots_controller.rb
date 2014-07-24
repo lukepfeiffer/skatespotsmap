@@ -2,6 +2,13 @@ class SpotsController < ApplicationController
   def index
   end
 
+  def city
+    if params[:address].present?
+      @city = City.find(params[:address])
+    end
+    @cities = Spot.pluck(:city).uniq
+  end
+
   def new
     @spot = Spot.new
   end

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'will_paginate'
 gem 'pry-rails'
 gem 'faraday'
 gem 'authem'

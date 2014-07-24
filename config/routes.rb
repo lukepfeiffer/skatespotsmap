@@ -4,7 +4,7 @@ Skatespotsmap::Application.routes.draw do
 
   root 'pages#home'
 
-  get '/city', to: 'pages#city'
+  get '/city', to: 'spots#city'
   get '/about', to: 'pages#about'
 
   post 'sessions', to: 'sessions#create'
