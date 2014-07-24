@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     if params[:search].present?
       @spots = Spot.fuzzy_search(params[:search])
     else
-      @spots = Spot.all.order(:city, :address_1)
+      @spots = Spot.paginate(page: params[:page], per_page:10).order(:city, :address_1)
     end
   end
 
