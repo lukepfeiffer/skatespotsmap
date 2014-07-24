@@ -1,4 +1,4 @@
-class CeateSpots < ActiveRecord::Migration
+class CreateSpots < ActiveRecord::Migration
   def change
     create_table :spots do |t|
       t.text :additional_info
