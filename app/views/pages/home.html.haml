@@ -17,3 +17,6 @@
         %li.spot_li= spot.additional_info
         - if current_user.present? && current_user.admin?
           = link_to 'Delete Spot', spot_path(spot), method: :delete, confirm: 'Are you sure?', class: 'delete'
+- else
+  %p#seach_error
+    Sorry, no spots match your search

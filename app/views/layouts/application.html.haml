@@ -9,7 +9,6 @@
     %h1
       = link_to 'Skate Spots Map', root_path, id: 'header_link'
     = link_to 'About Site', about_path, class: 'layout_link'
-    = link_to 'Find Your Area', city_path, class: 'layout_link'
     - if signed_in?
       = link_to 'Create Spot', new_spot_path, class: 'layout_link'
     - else

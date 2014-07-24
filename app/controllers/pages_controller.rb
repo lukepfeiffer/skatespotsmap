@@ -1,6 +1,10 @@
 class PagesController < ApplicationController
   def home
-    @spots = Spot.find(:all, order: :id, limit: '8', order: 'created_at DESC').reverse
+    if params[:search].present?
+      @spots = Spot.fuzzy_search(params[:search])
+    else
+      @spots = Spot.all.order(:city, :address_1)
+    end
   end
 
   def about
