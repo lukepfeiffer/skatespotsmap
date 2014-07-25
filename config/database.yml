@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: skatespots_development
+  database: skatespotsmap_development
   pool: 5
   timeout: 5000
 

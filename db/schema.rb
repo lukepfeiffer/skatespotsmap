@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140715223625) do
+ActiveRecord::Schema.define(version: 20140725022104) do
 
   create_table "spots", force: true do |t|
     t.text     "additional_info"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20140715223625) do
     t.datetime "created_at"
     t.string   "address_1"
     t.string   "address_2"
+    t.string   "filepicker_url"
   end
 
   create_table "users", force: true do |t|

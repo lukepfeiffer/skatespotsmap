@@ -28,6 +28,7 @@ class SpotsController < ApplicationController
       :address_1,
       :address_2,
       :description,
+      :filepicker_url,
       :additional_info
     )
   end

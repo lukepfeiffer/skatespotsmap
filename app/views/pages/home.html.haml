@@ -15,8 +15,11 @@
           = spot.zip_code
         %li.spot_li= spot.description
         %li.spot_li= spot.additional_info
+        %li.filepicker_url= link_to(filepicker_image_tag(spot.filepicker_url), spot.filepicker_url)
         - if current_user.present? && current_user.admin?
           = link_to 'Delete Spot', spot_path(spot), method: :delete, confirm: 'Are you sure?', class: 'delete'
 - else
   %p#seach_error
     Sorry, no spots match your search
+
+= will_paginate @spots
