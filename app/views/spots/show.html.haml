@@ -16,4 +16,5 @@
     %ul#additional_info
       %li= label_tag :Additional_Info
       %li= @spot.additional_info
-
+    - if current_user.present? && current_user.admin?
+      %div= link_to 'Edit Spot', edit_spot_path(@spot.id)

@@ -1,0 +1,27 @@
+%div#create_spot_form
+  = form_for(@spot) do |f|
+    %ul.left
+
+      %li= f.label :address_1
+      %li= f.text_field :address_1
+
+      %li= f.label :address_2
+      %li= f.text_field :address_2
+
+      %li= f.label :city
+      %li= f.text_field :city
+
+      %li= f.label :state
+      %li= f.text_field :state
+
+      %li= f.label :zip_code
+      %li= f.text_field :zip_code
+
+    %ul.right
+      %li= f.label :description
+      %li= f.text_area :description
+
+      %li= f.label :additional_info, id: 'additional info'
+      %li= f.text_area :additional_info
+
+      %li= f.submit
