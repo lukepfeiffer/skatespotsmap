@@ -18,5 +18,6 @@
     %div.username_div
       %span.username
         = current_user.username
+        (admin)
       = link_to 'Sign Out', sign_out_path, method: :delete, class: 'layout_link', id: 'sign_out'
   = yield

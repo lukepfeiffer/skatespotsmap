@@ -1,0 +1,17 @@
+%div.full_size_spot
+  %div= filepicker_image_tag @spot.filepicker_url
+  %p.address
+    = @spot.address_1
+    = @spot.address_2
+    ,
+    = @spot.state
+    = @spot.zip_code
+  %div.description
+    %ul#desc
+      %li=label_tag :Description
+      %li= @spot.description
+
+    %ul#additional_info
+      %li= label_tag :Additional_Info
+      %li= @spot.additional_info
+
