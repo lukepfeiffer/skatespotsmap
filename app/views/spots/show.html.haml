@@ -1,8 +1,10 @@
 %div.full_size_spot
-  %div= filepicker_image_tag @spot.filepicker_url
+  %div.filepicker_url= filepicker_image_tag @spot.filepicker_url
   %p.address
     = @spot.address_1
     = @spot.address_2
+    |
+    = @spot.city
     ,
     = @spot.state
     = @spot.zip_code

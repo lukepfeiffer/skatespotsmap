@@ -6,8 +6,13 @@
 }
 
 img{
-  width: 200px;
-  height: 150px;
+  width: 98%; 
+  height: 100%;
+}
+
+.filepicker_url{
+  width: 600px;
+  height: 375px;
 }
 
 button{
