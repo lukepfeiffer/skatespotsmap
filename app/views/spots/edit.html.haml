@@ -17,11 +17,11 @@
       %li= f.label :zip_code
       %li= f.text_field :zip_code
 
+      %li= f.submit class: 'submit', id: 'update_spot'
+
     %ul.right
       %li= f.label :description
       %li= f.text_area :description
 
       %li= f.label :additional_info, id: 'additional info'
       %li= f.text_area :additional_info
-
-      %li= f.submit
