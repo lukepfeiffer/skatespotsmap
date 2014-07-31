@@ -1,6 +1,7 @@
 Skatespotsmap::Application.routes.draw do
   resources :users
   resources :spots
+  resources :comments
 
   root 'pages#home'
 

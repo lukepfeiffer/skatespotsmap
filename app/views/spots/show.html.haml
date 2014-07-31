@@ -17,3 +17,17 @@
       %li= @spot.additional_info
     - if current_user.present? && current_user.admin?
       %div= link_to 'Edit Spot', edit_spot_path(@spot.id)
+%div.comment
+  %ul.view_comment
+    - @comments.each do |comment|
+      %li
+        = comment.user.username
+        = comment.comment
+  %div.new_comment
+    = form_for(@comment) do |f|
+      = f.hidden_field :spot_id, value: @spot.id
+      %li
+        Comment
+      %li= f.text_area :comment, class: 'comment_area'
+
+      %li= f.submit 'Post Comment'
