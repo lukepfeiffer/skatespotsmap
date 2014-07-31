@@ -13,6 +13,7 @@ img{
 .filepicker_url{
   width: 600px;
   height: 375px;
+  float: left;
 }
 
 button{
@@ -85,7 +86,7 @@ li{
   float: left;
   width: 230px;
   height: 200px;
-  margin: 10px;
+  margin: 10px 10px 50px 10px;
 }
 
 .city_spot{
@@ -158,11 +159,12 @@ li{
 }
 
 .full_size_spot{
-  margin: 0 20px;
+  margin: 10px 20px;
+  width: 980px;
 }
 
 .description{
-  float: left;
+  float: right;
 }
 
 .address{
