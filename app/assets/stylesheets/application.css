@@ -168,13 +168,40 @@ li{
   margin:  0 8px 300px 0;
 }
 
+.address{
+  margin: 0 8px;
+}
+
+
 .new_comment{
   margin: 4px;
 }
 
-.address{
-  margin: 0 8px;
+.comment{
+  width: 460px;
+  margin: 0;
 }
+
+.comment_username{
+  color: #2f49f5;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.comment_text{
+  font-size: 16px;
+}
+
+.comment_area{
+  width: 400px;
+  height: 109px;
+  border-radius: 3px;
+}
+
+.post_comment{
+  width: 125px;
+}
+
 
 #desc{
   width: 350px;
