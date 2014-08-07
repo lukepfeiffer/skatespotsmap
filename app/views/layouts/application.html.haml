@@ -13,7 +13,7 @@
     - if signed_in?
       = link_to 'Create Spot', new_spot_path, class: 'layout_link'
     - else
-      = link_to 'Create Spot', new_user_path, class: 'layout_link'
+      = link_to 'Sign In', new_user_path, class: 'layout_link'
   - if signed_in?
     %div.username_div
       %span.username

@@ -1,5 +1,5 @@
 = form_tag(root_path, method: :get) do
-  = text_field_tag :search
+  = text_field_tag 'Search', placeholder: 'Look for spots'
   = submit_tag 'Search', class: 'search'
 - if @spots.present?
   - @spots.each do |spot|
@@ -14,8 +14,6 @@
           = spot.state
           = spot.zip_code
         %li= link_to(filepicker_image_tag(spot.filepicker_url), spot_path(spot.id))
-        - if current_user.present? && current_user.admin?
-          = link_to 'Delete Spot', spot_path(spot), method: :delete, confirm: 'Are you sure?', class: 'delete'
 - else
   %p#seach_error
     Sorry, no spots match your search
