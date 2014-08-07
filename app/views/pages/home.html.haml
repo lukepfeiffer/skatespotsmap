@@ -1,5 +1,5 @@
 = form_tag(root_path, method: :get) do
-  = text_field_tag 'Search', placeholder: 'Look for spots'
+  = text_field_tag 'Search'
   = submit_tag 'Search', class: 'search'
 - if @spots.present?
   - @spots.each do |spot|

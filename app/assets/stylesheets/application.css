@@ -5,7 +5,6 @@
   margin: 5px 3px;
 }
 
-
 a{
   color: #0498c4;
 }
@@ -14,15 +13,15 @@ a:hover{
   font-weight: bold;
 }
 
-img{
-  width: 98%; 
-  height: 100%;
-}
-
 .filepicker_url{
   width: 600px;
   height: 375px;
   float: left;
+}
+
+.filepicker_url img{
+  width: 100%;
+  height: 100%;
 }
 
 button{
@@ -218,6 +217,11 @@ li{
   color: #0498c4;
 }
 
+.username img{
+  height: 100px;
+  width: 100px;
+}
+
 #comment_label{
   font-size: 16px;
   font-weight: bold;
@@ -252,10 +256,6 @@ li{
 
 #create_spot_form{
   width: 550px;
-}
-
-#logged_in_message{
-  font-size: 14px;
 }
 
 #about_text{

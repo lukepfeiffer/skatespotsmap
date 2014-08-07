@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731223407) do
+ActiveRecord::Schema.define(version: 20140807214339) do
 
   create_table "comments", force: true do |t|
     t.string  "comment"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20140731223407) do
     t.string  "reset_password_token"
     t.string  "session_token"
     t.boolean "admin"
+    t.string  "filepicker_url"
   end
 
 end

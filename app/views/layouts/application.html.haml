@@ -17,6 +17,7 @@
   - if signed_in?
     %div.username_div
       %span.username
+        = filepicker_image_tag current_user.filepicker_url, class: 'avatar'
         = current_user.username
         - if current_user.admin?
           (admin)
