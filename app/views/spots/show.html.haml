@@ -24,6 +24,7 @@
       - @spot.comments.each do |comment|
         %li
           %span.comment_username
+            = filepicker_image_tag comment.user.filepicker_url
             = comment.user.username + ':'
           %span.comment_text
             = comment.comment

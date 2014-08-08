@@ -164,8 +164,12 @@ li{
   background-color: #e6d240;
 }
 
+.view_comment{
+  margin: 20px;
+}
+
 .full_size_spot{
-  margin: 10px 20px;
+  margin: 20px 20px;
   width: 980px;
 }
 
@@ -192,6 +196,11 @@ li{
   color: #2f49f5;
   font-size: 19px;
   font-weight: bold;
+}
+
+.comment_username img{
+  width: 39px;
+  height: 39px;
 }
 
 .comment_text{
@@ -225,6 +234,15 @@ li{
 .username img{
   height: 100px;
   width: 100px;
+}
+
+.user_attributes{
+  text-align: center;
+}
+
+.user_attributes img{
+  width: 300px;
+  height: 300px;
 }
 
 #comment_label{
