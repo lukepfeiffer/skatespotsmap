@@ -237,12 +237,18 @@ li{
 }
 
 .user_attributes{
-  text-align: center;
+  width: 628px;
+  margin: 5px 6px;
 }
 
 .user_attributes img{
   width: 300px;
   height: 300px;
+}
+
+.show_username{
+  float: right;
+  font-size: 18px;
 }
 
 #comment_label{
@@ -303,4 +309,8 @@ li{
 
 #pick_file{
   font-weight: bold;
+}
+
+#created_spots{
+  margin: 5px 20px;
 }

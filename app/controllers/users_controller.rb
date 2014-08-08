@@ -3,7 +3,9 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show
+  def update
+    current_user.update_attributes(user_params)
+    redirect_to user_path(current_user)
   end
 
   def create

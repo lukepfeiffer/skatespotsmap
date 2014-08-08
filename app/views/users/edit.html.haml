@@ -1,0 +1,15 @@
+%div.field_holder
+  %div.sign_up_form
+    %p Sign Up
+    %ul
+      = form_for(current_user) do |f|
+        %li= f.label :username
+        %li= f.text_field :username
+
+        %li= f.label :email
+        %li= f.text_field :email
+
+        %li= f.label 'Choose an Avatar'
+        %li= f.filepicker_field :filepicker_url
+
+        %li= f.submit 'Update', class: 'submit'
