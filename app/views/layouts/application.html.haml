@@ -18,7 +18,7 @@
     %div.username_div
       %span.username
         = filepicker_image_tag current_user.filepicker_url, class: 'avatar'
-        = current_user.username
+        = link_to current_user.username, user_path(current_user.id)
         - if current_user.admin?
           (admin)
       = link_to 'Sign Out', sign_out_path, method: :delete, class: 'layout_link', id: 'sign_out'

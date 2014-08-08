@@ -1,5 +1,6 @@
 %div#create_spot_form
   = form_for(@spot) do |f|
+    = f.hidden_field :user_id, value: current_user.id
     %ul.left
 
       %li= f.label :address_1

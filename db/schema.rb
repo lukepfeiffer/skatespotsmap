@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140807214339) do
+ActiveRecord::Schema.define(version: 20140807234135) do
 
   create_table "comments", force: true do |t|
     t.string  "comment"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140807214339) do
     t.string   "address_1"
     t.string   "address_2"
     t.string   "filepicker_url"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|

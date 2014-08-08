@@ -1,9 +1,18 @@
-= form_tag(root_path, method: :get) do
-  = text_field_tag 'Search'
-  = submit_tag 'Search', class: 'search'
-- if @spots.present?
-  - @spots.each do |spot|
-    %div.spot
+%div
+  %p
+    = current_user.username
+    - if current_user.admin?
+      (Admin)
+  %div= filepicker_image_tag current_user.filepicker_url
+
+%div
+  %p
+    Spots that
+    = current_user.username
+    created
+
+  %div
+    - current_user.spots do |spot|
       %ul
         %li
           = spot.address_1
@@ -14,8 +23,3 @@
           = spot.state
           = spot.zip_code
         %li.home_images= link_to(filepicker_image_tag(spot.filepicker_url), spot_path(spot.id))
-- else
-  %p#seach_error
-    Sorry, no spots match your search
-
-= will_paginate @spots

@@ -19,14 +19,16 @@
         = link_to 'Edit Spot', edit_spot_path(@spot.id)
         = link_to 'Delete Spot', spot_path(@spot), method: :delete, confirm: 'Are you sure?', class: 'delete'
 %div.comment
-  -if
-    %ul.view_comment
+  %ul.view_comment
+    - if @spot.comments.present?
       - @spot.comments.each do |comment|
         %li
           %span.comment_username
             = comment.user.username + ':'
           %span.comment_text
             = comment.comment
+    - else
+      %p No comments yet
     %div.new_comment
       = form_for(@comment) do |f|
         = f.hidden_field :spot_id, value: @spot.id
@@ -38,6 +40,3 @@
           %li= f.submit :Comment , class: 'post_comment'
         - else
           Must be signed in to comment
-
-  -else
-    %p There are no comments yet

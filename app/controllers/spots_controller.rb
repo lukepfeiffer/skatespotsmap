@@ -40,6 +40,7 @@ class SpotsController < ApplicationController
     params.require(:spot).permit(
       :city,
       :state,
+      :user_id,
       :zip_code,
       :address_1,
       :address_2,
