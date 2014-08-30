@@ -199,8 +199,8 @@ li{
 }
 
 .comment_username img{
-  width: 39px;
-  height: 39px;
+  width: 30px;
+  height: 30px;
 }
 
 .comment_text{
@@ -232,12 +232,12 @@ li{
 }
 
 .username img{
-  height: 100px;
-  width: 100px;
+  height: 35px;
+  width: 35px;
 }
 
 .user_attributes{
-  width: 628px;
+  width: 598px;
   margin: 5px 6px;
 }
 

@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'filepicker-rails'
 gem 'will_paginate'
 gem 'textacular'
-gem 'pry-rails'
 gem 'authem'
 gem 'haml-rails'
 gem 'rails', '4.0.0'
@@ -17,4 +16,13 @@ gem 'jbuilder', '~> 1.2'
 
 group :doc do
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
