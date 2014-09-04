@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'formal'
 gem 'filepicker-rails'
 gem 'will_paginate'
 gem 'textacular'

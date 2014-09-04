@@ -15,8 +15,8 @@
   %p#created_spots
     Spots that you created
 
-  %div.spot
-    - current_user.spots.each do |spot|
+  - current_user.spots.each do |spot|
+    %div.spot
       %ul
         %li
           = spot.address_1

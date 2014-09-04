@@ -19,10 +19,13 @@
         %li= f.filepicker_field :filepicker_url
 
         %li= f.submit 'Sign Up', class: 'submit'
+
   %div.sign_in_form
     %p Sign In
     %ul
       = form_tag(sessions_path) do
+        - flash.keys.each do |key|
+          %p{class: key}= flash[key.to_sym]
         %li= label_tag :email
         %li= text_field_tag :email, nil
 

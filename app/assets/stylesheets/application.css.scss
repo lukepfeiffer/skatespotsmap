@@ -1,0 +1,325 @@
+#main{
+  background: url(Blank_US_Map.svg) no-repeat;
+  background-size: 100% 90%;
+  font-family: arial;
+  margin: 5px 3px;
+}
+
+a{
+  color: #0498c4;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+.alert{
+  font-size: 15px;
+  color: #e02424;
+}
+
+.error{
+  color: #e02424;
+}
+
+.filepicker_url{
+  width: 600px;
+  height: 375px;
+  float: left;
+}
+
+.filepicker_url img{
+  width: 100%;
+  height: 100%;
+}
+
+.home_images img{
+  width: 100%;
+  height: 100%;
+}
+
+button{
+  padding: 3px;
+  font-size: 15px;
+}
+
+h2{
+  margin: 0 2px;
+}
+
+p{
+  margin: 0;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+input{
+  width: 240px;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 2px 4px;
+}
+
+label{
+  text-decoration: underline;
+}
+
+textarea{
+  width: 240px;
+  height: 112px;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin: 2px 4px;
+}
+
+ul{
+  padding: 0;
+  margin: 5px 10px;
+}
+
+li{
+  list-style-type: none;
+}
+
+.field_holder{
+  width: 50%;
+}
+
+.submit{
+  width: 80px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+.username{
+  color: #1404c9;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.username_div{
+  margin: 0 6px;
+}
+
+.spot{
+  float: left;
+  width: 230px;
+  height: 200px;
+  margin: 10px 10px 50px 10px;
+}
+
+.city_spot{
+  float: left;
+  width: 250px;
+  margin: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.spot_li{
+  list-style-type: disc;
+  margin: 3px 18px;
+}
+
+.delete{
+  color: #c70a23;
+}
+
+.layout_link{
+  margin: 0 5px;
+  color: #0498c4;
+  text-decoration: none;
+}
+
+.layout_link:hover{
+  text-decoration: underline;
+}
+
+.links{
+  margin: 10px 0;
+}
+
+.sign_in{
+  color: #fff;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #0a26c7;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.about_li{
+  margin: 3px 18px;
+  font-size: 17px;
+  font-weight: normal;
+  list-style-type: disc;
+}
+
+.search{
+  width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #e6d240;
+}
+
+.view_comment{
+  margin: 20px;
+}
+
+.full_size_spot{
+  margin: 20px 20px;
+  width: 980px;
+}
+
+.description{
+  float: right;
+  margin:  0 8px 300px 0;
+}
+
+.address{
+  margin: 0 8px;
+}
+
+
+.new_comment{
+  margin: 4px;
+}
+
+.comment{
+  width: 460px;
+  margin: 0;
+}
+
+.comment_username{
+  color: #2f49f5;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.comment_username img{
+  width: 30px;
+  height: 30px;
+}
+
+.comment_text{
+  font-size: 16px;
+}
+
+.comment_area{
+  width: 400px;
+  height: 109px;
+  border-radius: 3px;
+}
+
+.post_comment{
+  width: 100px;
+}
+
+.pagination{
+  float: left;
+  font-size: 19px;
+  margin: 10px 19px;
+}
+
+.disabled{
+  color: #000;
+}
+
+.next_page{
+  color: #0498c4;
+}
+
+.username img{
+  height: 35px;
+  width: 35px;
+}
+
+.user_attributes{
+  width: 598px;
+  margin: 5px 6px;
+}
+
+.user_attributes img{
+  width: 300px;
+  height: 300px;
+}
+
+.show_username{
+  float: right;
+  font-size: 18px;
+}
+
+#comment_label{
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#desc{
+  width: 350px;
+}
+
+#additional_info{
+  width: 350px;
+}
+
+#header_link{
+  color: #000;
+  text-decoration: none;
+}
+
+#header_link:hover{
+  text-decoration: underline;
+  font-size: 33px;
+}
+
+#sign_out{
+  color: #c70a23;
+}
+
+#create_spot{
+  width: 115px;
+}
+
+#create_spot_form{
+  width: 550px;
+}
+
+#about_text{
+  font-size: 16px;
+  margin: 3px 10px;
+  width: 400px;
+}
+
+#about_ul{
+  width: 500px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#city_spot{
+  margin: 0 2px;
+}
+
+#update_spot{
+  width: 110px;
+}
+
+#pick_file{
+  font-weight: bold;
+}
+
+#created_spots{
+  margin: 5px 20px;
+}

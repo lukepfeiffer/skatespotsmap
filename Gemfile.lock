@@ -43,6 +43,7 @@ GEM
     execjs (2.2.1)
     filepicker-rails (1.1.0)
       rails (>= 3.2)
+    formal (1.0.1)
     haml (4.0.5)
       tilt
     haml-rails (0.5.1)
@@ -141,6 +142,7 @@ DEPENDENCIES
   authem
   coffee-rails (~> 4.0.0)
   filepicker-rails
+  formal
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails

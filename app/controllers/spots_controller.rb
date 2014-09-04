@@ -18,7 +18,7 @@ class SpotsController < ApplicationController
     if @spot.save
       redirect_to root_path
     else
-      redirect_to new_spot_path
+      render new_spot_path
     end
   end
 

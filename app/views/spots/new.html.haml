@@ -18,13 +18,13 @@
       %li= f.label :zip_code
       %li= f.text_field :zip_code
 
-      %li= f.label 'Image of Spot', id: 'pick_file'
+      %li= f.label :filepicker_url, 'Image of Spot'
       %li= f.filepicker_field :filepicker_url
 
     %ul.right
       %li= f.label :description
       %li= f.text_area :description, placeholder: 'A little bit of information on what the spot is.'
 
-      %li= f.label :additional_info, id: 'additional info'
+      %li= f.label :additional_info
       %li= f.text_area :additional_info
       %li= f.submit 'Create Spot', class: 'submit', id: 'create_spot'

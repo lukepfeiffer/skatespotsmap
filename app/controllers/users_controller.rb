@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       sign_in(@user)
       redirect_to root_path
     else
-      redirect_to new_user_path
+      render new_user_path
     end
   end
 
